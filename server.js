@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:3005",
+    origin: ["http://localhost:3005", "https://rtk-query-todo.onrender.com/"],
     credentials: true,
   })
 );
