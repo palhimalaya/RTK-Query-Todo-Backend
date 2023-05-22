@@ -27,7 +27,7 @@ This is the backend API repository for the RTK Query Todo App. It provides the n
 1. Clone the repository or Fork it:
 
    ```shell
-   git clone https://github.com/your-username/rtk-query-todo-backend.git
+   git clone https://github.com/your-username/RTK-Query-Todo-Backend.git
    ```
 
 2. Navigate to the project directory:
