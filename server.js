@@ -4,17 +4,13 @@ const connectDB = require("./config/db");
 const cors = require("cors");
 const { mongoose } = require("mongoose");
 const path = require("path");
+const corsOptions = require("./config/corsOption");
 
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(
-  cors({
-    origin: ["http://localhost:3005", "https://rtk-query-todo.onrender.com/"],
-    credentials: true,
-  })
-);
+app.use(cors(corsOptions));
 app.use(express.json());
 
 connectDB();
